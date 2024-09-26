@@ -1,0 +1,8 @@
+<launch>
+
+    <arg name="project" default="sc_liosam"/>
+
+    <!--- Run Rviz-->
+    <node pkg="rviz" type="rviz" name="$(arg project)_rviz" args="-d $(find sc_liosam)/launch/include/config/rviz.rviz" />
+
+</launch>

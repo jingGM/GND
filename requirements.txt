@@ -1,0 +1,10 @@
+numpy==1.23
+catkin_pkg
+rospkg
+rospy
+opencv-python
+empy==3.3.4
+open3d
+pycryptodomex
+scipy
+gnupg
