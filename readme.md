@@ -163,5 +163,11 @@ Check the selected points in each visualization and also the last windown is the
 
 It make take several tries to choose correct threshold for registration
 
-### 4. Draw masks:
-After register all the points together, you will get a big map. 
+### 4. Draw traversability maps:
+After register all the points together, you will get a big map. Draw the traversability map with the 5 colors:
+- obstacles (buildings and trees): Red: #FF0000
+- off-road terrain (traversable grass): green: #00FF00
+- driveways: blue: #0000FF
+- stairs or curbs: yellow: #FFFF00
+- not-mapped areas: black: #000000
+- fully traversable areas (sidewalks, concrete areas, ramp, and etc.): white: #FFFFFF
