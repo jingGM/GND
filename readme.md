@@ -1,3 +1,23 @@
+<div align="center">
+  <img src="figures/umd_trav.png" width="200"/>
+  <div>&nbsp;</div>
+  <div align="center">
+    <b><font size="4">GND: Global Navigation Dataset with Multi-Modal Perception and Multi-Category Traversability in Outdoor Campus Environments </font></b>
+    <sup>
+    </sup>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  <div>&nbsp;</div>
+
+[Dataset](https://dataverse.orc.gmu.edu/dataset.xhtml?persistentId=doi:10.13021/orc2020/JUIW5F) |
+[Code](https://github.com/jingGM/GND) |
+[Website](https://cs.gmu.edu/~xiao/Research/GND/) |
+[Video](https://www.youtube.com/watch?v=teNuzlAEDY8) |
+[Paper](https://arxiv.org/abs/2409.14262)
+
+</div>
+
+
 # Necessary ROS Topics:
 ```
 RGB Images:                                      /camera/camera_info; /camera/color/image_raw/compressed
