@@ -1,5 +1,6 @@
 <div align="center">
   <img src="figures/umd_trav.png" width="200"/>
+  <img src="figures/umd_binary.png" width="200"/>
   <div>&nbsp;</div>
   <div align="center">
     <b><font size="4">GND: Global Navigation Dataset with Multi-Modal Perception and Multi-Category Traversability in Outdoor Campus Environments </font></b>
