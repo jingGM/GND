@@ -68,6 +68,10 @@ def select_points(pts, threshold, choose_type=0):
 
 
 def process_files(src_folder, dst_folder, root, src_threshold, dst_threshold, resolution=0.1, display=False, choose_type=0):
+    output_folder = os.path.join(root, "merged")
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
     src_file = os.path.join(root, src_folder, 'map_removed_ground_top.pcd')
     dst_file = os.path.join(root, dst_folder, 'map_removed_ground_top.pcd')
 
@@ -112,9 +116,6 @@ def process_files(src_folder, dst_folder, root, src_threshold, dst_threshold, re
         cost_map[x, y] = 1
     cv2.imwrite(os.path.join(root, 'merged/{}_{}_merged.png'.format(src_folder, dst_folder)), cost_map * 255)
 
-    output_folder = os.path.join(root, "merged")
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
     with open(os.path.join(output_folder, "{}_{}_merged.pkl".format(src_folder, dst_folder)), 'wb') as handle:
         pickle.dump({
             "min_xy": min_value,
@@ -127,14 +128,14 @@ def process_files(src_folder, dst_folder, root, src_threshold, dst_threshold, re
 def get_args():
     parser = argparse.ArgumentParser(description='process rosbags')
     parser.add_argument('--display', action='store_true', default=False, help="if to display the points for debugging")
-    parser.add_argument('--choose_type', type=int, default=0,
+    parser.add_argument('--choose_type', type=int, default=2,
                         help="methods to choose points: 0: use threshold; 1: downsample; 2: first 12000;")
     parser.add_argument('--src_folder', type=str, help="the folder name of the source points", default="avw1")
     parser.add_argument('--dst_folder', type=str, help="the folder name of the destination points", default="iribe2")
     parser.add_argument('--root', type=str, help="the folder of the all lio-sam results", default="results")
-    parser.add_argument('--src_threshold', nargs='+', type=float,
+    parser.add_argument('--src_threshold', nargs='+', type=float, default=(0, 0),
                         help="threshold the src points: xmin, xmax, ymin, ymax")
-    parser.add_argument('--dst_threshold', nargs='+', type=float,
+    parser.add_argument('--dst_threshold', nargs='+', type=float, default=(0, 0),
                         help="threshold the src points: xmin, xmax, ymin, ymax")
     return parser.parse_args()
 
