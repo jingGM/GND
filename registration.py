@@ -106,7 +106,7 @@ def process_files(src_folder, dst_folder, root, src_threshold, dst_threshold, re
     pcd = src_cloud + dst_cloud
     if display:
         o3d.visualization.draw_geometries([pcd])
-    # o3d.io.write_point_cloud(os.path.join(root, 'merged/{}_{}_merged.pcd'.format(src_folder, dst_folder)), pcd)
+    o3d.io.write_point_cloud(os.path.join(root, 'merged/{}_{}_merged.pcd'.format(src_folder, dst_folder)), pcd)
 
     res = np.asarray(pcd.points, dtype=np.float32)
     indices, return_counts = np.unique(np.floor(res / resolution).astype(np.int)[:, :2], axis=0, return_counts=True)
