@@ -18,6 +18,18 @@
 
 </div>
 
+# Citing
+* > Liang, Jing*, Dibyendu Das*, Daeun Song*, Md Nahid Hasan Shuvo, Mohammad Durrani, Karthik Taranath, Ivan Penskiy, Dinesh Manocha, and Xuesu Xiao,
+  > **"GND: Global Navigation Dataset with Multi-Modal Perception and Multi-Category Traversability in Outdoor Campus Environments"**,
+  > in 2025 IEEE International Conference on Robotics and Automation (ICRA), 2025. ([PDF](https://arxiv.org/pdf/2409.14262v1))
+
+        @misc{liang2024gndglobalnavigationdataset,
+              title={GND: Global Navigation Dataset with Multi-Modal Perception and Multi-Category Traversability in Outdoor Campus Environments}, 
+              author={\textbf{Jing Liang}* and Dibyendu Das* and Daeun Song* and Md Nahid Hasan Shuvo and Mohammad Durrani and Karthik Taranath and Ivan Penskiy and Dinesh Manocha and Xuesu Xiao},
+              year={2025}, 
+              booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)}, 
+              organization={IEEE}
+              }
 
 # Necessary ROS Topics:
 ```
@@ -192,3 +204,12 @@ After register all the points together, you will get a big map. Draw the travers
 - stairs or curbs: yellow: #FFFF00
 - not-mapped areas: black: #000000
 - fully traversable areas (sidewalks, concrete areas, ramp, and etc.): white: #FFFFFF
+
+# Contact Information
+```commandline
+- Jing Liang: jingliangcgm@gmail.com
+- Daeun Song: dsong26@gmu.edu
+- Dibyendu Das: ddas6@gmu.edu
+```
+
+
