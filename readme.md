@@ -25,7 +25,7 @@
 
         @misc{liang2024gndglobalnavigationdataset,
               title={GND: Global Navigation Dataset with Multi-Modal Perception and Multi-Category Traversability in Outdoor Campus Environments}, 
-              author={\textbf{Jing Liang}* and Dibyendu Das* and Daeun Song* and Md Nahid Hasan Shuvo and Mohammad Durrani and Karthik Taranath and Ivan Penskiy and Dinesh Manocha and Xuesu Xiao},
+              author={Jing Liang* and Dibyendu Das* and Daeun Song* and Md Nahid Hasan Shuvo and Mohammad Durrani and Karthik Taranath and Ivan Penskiy and Dinesh Manocha and Xuesu Xiao},
               year={2025}, 
               booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)}, 
               organization={IEEE}
@@ -208,7 +208,7 @@ After register all the points together, you will get a big map. Draw the travers
 # Contact Information
 ```commandline
 - Jing Liang: jingliangcgm@gmail.com
-- Daeun Song: dsong26@gmu.edu
+- Daeun Song: daeun7250@gmail.com
 - Dibyendu Das: ddas6@gmu.edu
 ```
 
