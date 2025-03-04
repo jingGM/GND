@@ -204,6 +204,7 @@ After register all the points together, you will get a big map. Draw the travers
 - stairs or curbs: yellow: #FFFF00
 - not-mapped areas: black: #000000
 - fully traversable areas (sidewalks, concrete areas, ramp, and etc.): white: #FFFFFF
+This step is labeled by human. We used Photoshop with different layers to ensure the colors aligned well with the point clouds in the global maps.
 
 # Contact Information
 ```commandline
