@@ -47,6 +47,18 @@ Before data collection, check the sensors' status: Camera, IMU, Lidar, Odometry 
 
 Data collection matter a lot to the accuracy and drifiting of map building. Thus, it's highly recommended to try some small dataset and get a sense of how Lio-Sam works and how is the performance of the algorithm.
 
+# Download Current GND dataset
+Download the dataset in the given path
+```
+cd download_GND
+python download_GND/download_GND.py --path="ADDRESS OF THE GND FOLDER"  # e.g. --path="/dataset/GND"
+```
+Then merge the chunks together to a bag
+```
+python download_GND/download_GND.py --chunks_directory="The folder of chunks" --merged_bag_file="directory of the merged bag" 
+# --chunks_directory="/dataset/GND/AU" --merged_bag_file="/dataset/GND/AU.bag" 
+# pay attention to the chunks_directory, which should only contain the chunks of the same rosbag.
+```
 
 # Setup Environment after Data Collection
 ### Install [ROS Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu)
